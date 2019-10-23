@@ -27,8 +27,14 @@ def help()
     puts "- exit : exits this program"
 end 
 
-def play
-  
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_input = gets.strip 
+  if user_input == #valid song number or song name 
+  puts "Playing song name"
+else 
+  puts "Invalid input, please try again"
+ end 
 end 
 
 def list 

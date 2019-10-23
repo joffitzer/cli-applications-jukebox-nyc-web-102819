@@ -60,6 +60,11 @@ def exit_jukebox()
   puts "Goodbye"
 end 
 
+def prompt()
+  puts "Please enter a command:"
+  gets.chomp()
+end
+
 def run(songs)
   help()
   user_input = prompt()

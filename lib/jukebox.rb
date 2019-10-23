@@ -20,6 +20,9 @@ songs = [
 ]
 
 def help
+  user_input = gets 
+  if user_input == "help"
+    puts 
   
 end 
 

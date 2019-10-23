@@ -47,4 +47,5 @@ end
 
 def run(songs)
   help 
+  play 
 end 

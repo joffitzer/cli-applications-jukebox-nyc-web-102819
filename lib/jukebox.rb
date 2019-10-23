@@ -41,11 +41,12 @@ def list
   
 end 
 
-def exit_jukebox
-  
+def exit_jukebox()
+  puts "Goodbye"
 end 
 
 def run(songs)
   help 
   play 
+  exit_jukebox
 end 

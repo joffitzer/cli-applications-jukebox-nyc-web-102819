@@ -46,7 +46,29 @@ def exit_jukebox()
 end 
 
 def run(songs)
-  puts "Please enter a command:"
+  help()
+  user_input = prompt()
+  
+  while user_input != "exit"
+    if user_input == "list"
+      list(my_songs)
+      user_input = prompt()
+    elsif user_input == "play"
+      play(my_songs)
+      user_input = prompt()
+    elsif user_input == "help"
+      help()
+      user_input = prompt()
+    else
+      puts "Invalid command"
+      help()
+      user_input = prompt()
+    end
+  end
+  
+  exit_jukebox()
+  
+  #puts "Please enter a command:"
   user_input = gets.strip
   if user_input == "help"
     help 

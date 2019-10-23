@@ -19,7 +19,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def help
+def help()
   user_input = gets.strip 
   if user_input == "help"
     puts "I accept the following commands:"
